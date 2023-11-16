@@ -34,7 +34,7 @@ public class ProdutoController {
         }
         Produto produtoSalvo = produtoService.salvarProduto(produto);
         return new ResponseEntity<>(produtoSalvo, HttpStatus.CREATED);
-    }
+    }d
     @GetMapping("/findById/{id}")
     public ResponseEntity<Produto> consultarProdutoPorId(@PathVariable String id) {
         Produto produto = produtoService.findById(id).orElse(null);
