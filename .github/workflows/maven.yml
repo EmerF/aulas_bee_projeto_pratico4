@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
+name: Build on Push
 
 on:
   push:
@@ -31,5 +31,3 @@ jobs:
       run: mvn clean 
     - name: Install dependencies and package skiping Tests
       run: mvn clean install -DskipTests
-
-    
