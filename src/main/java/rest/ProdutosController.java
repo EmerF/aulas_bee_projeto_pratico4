@@ -1,4 +1,4 @@
-package controller;
+package rest;
 
 import Repository.ProdutosRepository;
 import models.Produtos;
