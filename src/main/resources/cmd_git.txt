@@ -1,0 +1,11 @@
+# Pausar um trabalho em execução
+git stash;
+
+# Retomar o trabalho pausado
+git stash pop;
+
+# Criar um alias
+git config --global alias.addAll 'git add .' ;
+
+# Volta ao estado do repositório para um commit específico
+git reset --hard (hash do seu commit) ;
