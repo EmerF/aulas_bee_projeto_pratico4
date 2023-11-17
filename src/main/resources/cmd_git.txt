@@ -1,0 +1,11 @@
+#Pausa um trabalho em execução
+git stash;
+
+#Retoma o trabalho pausado
+git stash pop;
+
+#Cria um alias e add todos os arquivos para aerea de stage
+git config --global alias.add-all 'add -A';
+
+#Permite voltar ao estado do respositorio para um commit especifico
+git reset --hard hash_do_commit;
