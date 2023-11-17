@@ -1,0 +1,11 @@
+# To pause a running task and switch branches
+git stash save; git checkout other_branch_name
+
+# To resume a paused task
+git stash pop
+
+# To create an alias for the command that adds all files to the staging area
+git config --global alias.add-all 'add -A'
+
+# To revert the repository to a specific commit
+git reset --hard commit_hash
