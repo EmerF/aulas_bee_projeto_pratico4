@@ -1,0 +1,4 @@
+git stash;
+git stash apply stash@{0};
+git config --global alias.addall 'add .';
+git reset --hard <commit_id>;
