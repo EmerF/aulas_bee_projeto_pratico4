@@ -1,0 +1,24 @@
+name: Build on Push
+
+on:
+  push:
+    branches: [ "Deborah" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+      - name: Limpa projeto com Maven
+        run: mvn clean
+
+      - name: Instala dependencias com Maven sem testes
+        run: mvn install -DskipTests
