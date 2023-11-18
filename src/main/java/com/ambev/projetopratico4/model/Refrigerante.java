@@ -4,14 +4,18 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "refrigerantes")
 public class Refrigerante extends Produto {
+    private boolean light;
 
-    private boolean temAcucar;
 
-    public boolean isTemAcucar() {
-        return temAcucar;
+    public Refrigerante(String id, String nome, String descricao, double preco) {
+        super(id, nome, descricao, preco);
     }
 
-    public void setTemAcucar(boolean temAcucar) {
-        this.temAcucar = temAcucar;
+    public boolean isComAcucar() {
+        return light;
+    }
+
+    public void setComAcucar(boolean comAcucar) {
+        this.light = comAcucar;
     }
 }

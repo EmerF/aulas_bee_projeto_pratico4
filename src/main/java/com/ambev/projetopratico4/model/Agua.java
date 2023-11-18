@@ -3,14 +3,18 @@ package com.ambev.projetopratico4.model;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "aguas")
-public class Agua extends Produto{
-    private boolean temGas;
+public class Agua extends Produto {
+    private boolean gaseificada;
 
-    public boolean isTemGas() {
-        return temGas;
+    public Agua(String id, String nome, String descricao, double preco) {
+        super(id, nome, descricao, preco);
     }
 
-    public void setTemGas(boolean temGas) {
-        this.temGas = temGas;
+    public boolean isComGas() {
+        return gaseificada;
+    }
+
+    public void setComGas(boolean comGas) {
+        this.gaseificada = comGas;
     }
 }

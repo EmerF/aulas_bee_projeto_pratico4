@@ -1,0 +1,4 @@
+git stash save -u ;
+git stash pop ;
+git config --global alias.addAll 'git add .' ;
+git reset --hard (hash do seu commit) ;
