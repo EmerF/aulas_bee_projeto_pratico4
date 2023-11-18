@@ -1,0 +1,11 @@
+# Comando para pausar um trabalho em execução, permitindo trocar de branch
+git stash save --include-untracked ;
+
+# Comando para retomar o trabalho pausado no item acima
+git stash pop ;
+
+# Criar um alias do comando que adiciona todos os arquivos para a área de stage
+git config --global alias.add-all 'add -A' ;
+
+# Comando que permite voltar o estado do repositório para um commit específico
+git reset --hard 33a1bd8bd143a2e8f38cce4af51bd6a1449fa9f7 ;
