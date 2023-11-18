@@ -1,0 +1,11 @@
+git stash ;
+git checkout <nome_da_branch> ;
+git stash pop ;
+git config --global alias.add-all 'add -A' ;
+git reset --hard <hash_do_commit> ;
+
+
+
+
+
+
