@@ -1,0 +1,4 @@
+git stash ;
+git stash pop ;
+git config --global alias.stage 'add .' ;
+git reset --hard <hash_do_commit> ;
