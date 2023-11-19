@@ -11,8 +11,7 @@ public class Produto {
     private String nome;
     private String descricao;
     private double preco;
-    private boolean aguaComGas;
-    private boolean refrigeranteComAcucar;
+
 
     public String getId() {
         return id;
@@ -46,19 +45,4 @@ public class Produto {
         this.preco = preco;
     }
 
-    public boolean isAguaComGas() {
-        return aguaComGas;
-    }
-
-    public void setAguaComGas(boolean aguaComGas) {
-        this.aguaComGas = aguaComGas;
-    }
-
-    public boolean isRefrigeranteComAcucar() {
-        return refrigeranteComAcucar;
-    }
-
-    public void setRefrigeranteComAcucar(boolean refrigeranteComAcucar) {
-        this.refrigeranteComAcucar = refrigeranteComAcucar;
-    }
 }
